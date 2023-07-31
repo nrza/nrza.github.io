@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body {font-family: 'Roboto Mono', monospace;overflow: hidden;}
+
+.ms-social_networks {position: absolute;right: 1em;top: 1em;}
+.ms-social_networks a {text-decoration: none;margin-left: .3em;font-size: 20px;transition-duration: .2s;}
+
+.ms-content {position: absolute;left: 1em;bottom: 1em;margin-right: 1em;}
+.ms-content * {margin: 0;padding: 0;box-sizing: border-box;}
+.ms-content h1, .ms-content h2 {display: inline-block;margin: 0;}
+
+.ms-content h1 {font-weight: 300;font-size: 5rem;margin-right: 0;padding: 0;}
+.ms-content h1::before {content: 'NEREZZA';}
+.ms-content h1::after {font-weight: 200;content: '0';}
+
+.ms-content h2 {font-weight: 100;font-size: 5rem;margin-left: 0;padding: 0;}
+.ms-content h2::before {content: '@';margin-right: .1em;}
+.ms-content h2::after {content: '|';margin-left: .1em;opacity: 1;animation: blinker 2s infinite;font-weight: 100;}
+
+@keyframes blinker {50% {opacity: 0;}}
+@media only screen and (max-width: 470px) {.ms-content h2 {display: none;}}
+@media only screen and (max-width: 420px) {.ms-content h1 {font-size: 4rem;}}
+@media only screen and (max-width: 336px) {.ms-content h1 {font-size: 3rem;}}
+@media only screen and (max-width: 256px) {.ms-content h1 {font-size: 2rem;}}
